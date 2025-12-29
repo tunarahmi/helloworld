@@ -1,10 +1,11 @@
 <?php
+
 /**
  * Sample function
  */
-if (!function_exists('format_price')) {
+if (! function_exists('format_price')) {
     function format_price($amount): string
     {
-        return number_format($amount, 2, ',', '.') . ' TL';
+        return number_format($amount, 2, ',', '.').' TL';
     }
 }
